@@ -65,6 +65,7 @@ namespace WebsiteBanHang.Controllers
                     sp.HinhAnh1 = fileName;  //lưu vào sp
                 }
             }
+            //check null when add picture descrip
             if (HinhAnh2 != null)
             {
                 if (HinhAnh2.ContentLength > 0)
