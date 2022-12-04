@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>websitye bán hàng điện lạnh</title>
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/Content/fontawesome/css/all.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/Content/fontawesome/css/all.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="~/Content/css/Home_style.css" rel="stylesheet" type="text/css" media="all">
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="New Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css"><!--//fonts-->
+    <!-- start menu -->
+    <link href="~/Content/css/memenu.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="~/Content/js/memenu.js"></script>
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <script src="~/Content/js/simpleCart.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <style>
+        .footer-class {
+            background-color: #008080;
+        }
+        .footer {
+            background-color: #008080;
+        }
+        .bannerr {
+            background-image: url('../../Content/images/dien-tu-dien-lanh-760-3671.png');
+            background-size: cover;
+            width: 100%;
+            min-height: 560px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        @Html.Partial("~/Views/Layout//HeaderTopPartial.cshtml")
+        <div class="container">
+            <div class="head-top">
+                <div class="logo">
+                   
+               
+                </div>
+                @Html.Action("MenuPartial", "Home")
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="bannerr">
+        <div class="container">
+            <script src="~/Content/js/responsiveslides.min.js"></script>
+            <script>
+                $(function () {
+                    $("#slider").responsiveSlides({
+                        auto: true,
+                        nav: true,
+                        speed: 500,
+                        namespace: "callbacks",
+                        pager: true,
+                    });
+                });
+            </script>
+            <div id="top" class="callbacks_container">
+                <ul class="rslides callbacks callbacks1" id="slider">
+                        <li id="callbacks1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;">
+
+                            <div class="banner-text">
+                                <h3>Tủ lạnh Samsung Inverter 380 lít RT38K5982BS/SV</h3>
+                                <p>Tủ lạnh Samsung Inverter 380 lít RT38K5982BS/SV được thiết kế hiện đại cộng với tông màu đen inox sang trọng, tinh tế hứa hẹn sẽ làm nổi bật lên không gian nội thất, tô điểm thêm vẻ đẹp cho căn nhà của bạn.</p>
+                                <a href="@Url.Action("SanPham","SanPham",new {@MaLoaiSP = 1, @MaNSX = 4})">Xem thêm</a>
+                            </div>
+
+                        </li>
+                        <li id="callbacks1_s1" class="callbacks1_on" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out 0s;">
+
+                            <div class="banner-text">
+                                <h3>Android Tivi Casper 43 inch 43FG5200</h3>
+                                <p>Khóa chặt mọi tầm nhìn với thiết kế tinh tế, chắc chắn</p>
+
+                            </div>
+
+                        </li>
+                        <li id="callbacks1_s2" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;">
+                            <div class="banner-text">
+                                <h3>Máy lọc nước RO Kangaroo </h3>
+                                <p>Thiết kế nhỏ gọn, kích cỡ tiết kiệm đến 65% diện tích so với các dòng máy truyền thống trước kia</p>
+
+
+                            </div>
+
+                        </li>
+                    </ul>
+                    <a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a><ul class="callbacks_tabs callbacks1_tabs"><li class="callbacks1_s1"><a href="#" class="callbacks1_s1">1</a></li><li class="callbacks1_s2 callbacks_here"><a href="#" class="callbacks1_s2">2</a></li><li class="callbacks1_s3"><a href="#" class="callbacks1_s3">3</a></li></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="content">
+        @RenderBody()
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top-at">
+
+                <div class="col-md-4 amet-sed">
+                    <h4 style="color:black">Thông Tin</h4>
+                    <ul class="nav-bottom">
+                        <li><a href="#">How to order</a></li>
+               
+                        <li><a href="contact.html">Giao hàng tận nơi</a></li>
+                        <li><a href="#">Hỗ trợ trả góp</a></li>
+                        <li><a href="#">Ưu đãi cho thành viên vip</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 amet-sed ">
+                    <h4 style="color:black">Sản phẩm chất lượng</h4>
+
+                    <p>
+                        Gọi ngay để được tư vấn
+                    </p>
+                    <p>Mail: banhangdienlanh@gmail.com</p>
+                    <p>sdt:  +12 34 995 0792</p>
+                    <ul class="social">
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i class="twitter"> </i></a></li>
+                        <li><a href="#"><i class="rss"> </i></a></li>
+                        <li><a href="#"><i class="gmail"> </i></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4 amet-sed">
+                    <h4 style="color:black">Newsletter</h4>
+                    <p>
+                        Sign Up to get all news update
+                        and promo
+                    </p>
+                    <form>
+                        <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+                        <input type="submit" value="Sign up">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="footer-class">
+            <p>Công ty cổ phần điện lạnh. GPDKKD: 0214342344 do sở KH & ĐT TP.HCM cấp ngày 02/01/2021.  <a href="http://w3layouts.com/" target="_blank">Điện lạnh </a> </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

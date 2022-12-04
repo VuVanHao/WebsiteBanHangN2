@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Website bán hàng điện lạnh</title>
+</head>
+<body 
+      style="background-image">
+    <div id="main">
+        <div class="fof">
+            <h1>Bạn phải đăng nhập bằng tài khoản Admin @Html.ActionLink("Quay về","Index","Home")</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+    transition: all 0.6s;
+}
+
+html {
+    height: 100%;
+}
+
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #20b2aa;
+        margin: 0;
+    }
+
+#main{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+}
+
+
+</style>

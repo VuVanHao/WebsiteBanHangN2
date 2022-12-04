@@ -1,0 +1,431 @@
+﻿@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 980px) {
+	#MobileMenu {
+		display: block;
+		z-index: 111
+	}
+
+	#menutop {
+		position: relative;
+		z-index: 5555;
+		font-size: 120%
+	}
+
+		#menutop ul {
+			position: absolute;
+			background: #eee;
+			width: 100%;
+			display: none;
+			top: 100%;
+		}
+
+			#menutop ul li {
+				position: relative;
+				float: none;
+				width: 100%
+			}
+
+			#menutop ul ul {
+				position: relative;
+				background: #fff;
+				padding: 0
+			}
+
+			#menutop ul a {
+				text-transform: none;
+				color: #333
+			}
+
+			#menutop ul ul li {
+				width: 100%;
+				display: none
+			}
+
+			#menutop ul ul a {
+				padding-top: 16px !important;
+				padding-bottom: 16px !important;
+				padding-left: 40px !important
+			}
+
+			#menutop ul ul ul li {
+				position: relative;
+				top: 100%;
+				left: 0;
+				display: none;
+				padding-left: 5%;
+				width: 95%
+			}
+
+			#menutop ul ul li:hover > ul {
+				display: none
+			}
+
+			#menutop ul ul ul {
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+
+			#menutop ul > li > span {
+				display: inline-block;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				width: 60px;
+				height: 30px;
+				background: url(../images/down-arrow.png) center center no-repeat;
+				text-indent: -9999px;
+				cursor: pointer;
+				border-radius: 5px
+			}
+
+	#MobileMenu {
+		background: #007cc3 url(../images/threeline.png) left 20px center no-repeat
+	}
+
+	.kw_search {
+		position: absolute;
+		right: 5px;
+		top: 2px;
+		z-index: 9999
+	}
+
+	.kw_header a.cart {
+		position: absolute;
+		top: 0px;
+		right: 10px
+	}
+
+	.kw_header a.logo {
+		margin: 0;
+		display: inline-block;
+		float: left
+	}
+
+	.kw_header ul.texttop {
+		display: none;
+	}
+
+	.kw_dichvu li > a {
+		width: 48% !important;
+	}
+
+	.textbottom li {
+		width: 50%
+	}
+
+	.kw_textbottom {
+		height: auto
+	}
+
+	.kw_spnoibat li, .kw_tinmoi li {
+		width: 48%
+	}
+
+		.kw_spnoibat li:last-child, .kw_tinmoi li:last-child {
+		}
+
+	#boxsp li.product {
+		width: 32.33%;
+	}
+
+	#boxsp li.news {
+		width: 47%;
+	}
+
+	.logothuonghieu li > a {
+		width: 30.33% !important
+	}
+
+	.footer .info {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.footer .link {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 20px 0;
+		padding: 0;
+	}
+
+	.footer .social {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.cgallery {
+		width: 96% !important;
+		margin: 0 auto;
+	}
+
+	.cinfo {
+		width: 96% !important;
+		margin: 0 auto;
+	}
+
+	.popup .frame {
+		width: 90% !important;
+		height: auto;
+	}
+
+	input.full {
+		padding: 2% !important;
+	}
+
+	table {
+		width: 100% !important
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	iframe {
+		max-width: 100% !important
+	}
+
+	.leftcol {
+		display: none
+	}
+
+	.content {
+		width: 100%;
+		float: none
+	}
+
+	#menutop ul a {
+		padding-left: 20px
+	}
+
+	#menutop > ul > li > a:hover {
+		color: #fff
+	}
+
+	#menutop > ul > li {
+		border-top: 1px #ccc solid
+	}
+
+	ul.texttop li {
+		width: 100%;
+		margin-bottom: 10px !important
+	}
+
+	.mxh {
+		display: inline-block;
+		position: static;
+		float: right;
+		margin: 20px 0px
+	}
+
+	.kw_header .main {
+		position: static
+	}
+
+	.mxh ul {
+		text-align: center
+	}
+
+		.mxh ul li {
+			float: none;
+			margin: 0px;
+			margin-left: 10px
+		}
+
+	.hotline_top {
+		display: none
+	}
+
+	.testtop {
+		padding: 0;
+		margin-bottom: 10px;
+		padding-top: 5px
+	}
+
+	.kw_header a.logo img {
+		max-width: 100px
+	}
+
+	.kw_header .main > img {
+		display: none
+	}
+
+	.topbanner {
+		border-top: 1px #ccc solid;
+		margin-top: 5px
+	}
+
+	.main, .kw_header .main {
+		width: 98%;
+		margin-left: 1%
+	}
+
+	.footer .info {
+		margin: 0;
+		text-align: left
+	}
+
+	.footer .link {
+		text-align: left
+	}
+
+	iframe {
+		min-height: 222px
+	}
+
+	.kw_quota {
+		padding: 0;
+		margin: 0
+	}
+
+	#menutop > ul > li {
+		border-left: 0px !important
+	}
+
+	.setleft {
+		margin-left: 1.5% !important
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#boxsp li.product {
+		width: 48%;
+		margin: 1%
+	}
+
+	.lcontact, .rcontact {
+		width: 100%
+	}
+
+		.lcontact iframe {
+			width: 100%;
+			max-height: 300px
+		}
+
+	.rcontact {
+		margin-top: 15px
+	}
+
+	#boxsp li.product {
+		width: 48%
+	}
+
+	.kw_tinmoi li h3 {
+		margin-bottom: 0
+	}
+
+	.testtop {
+		display: none
+	}
+
+	.kw_header .main {
+		display: none
+	}
+
+	.topbanner {
+		margin: 0px
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.lcontact, .rcontact {
+		width: 100%
+	}
+
+	.lcontact {
+		margin-bottom: 25px
+	}
+
+	ul.texttop li img {
+		display: none
+	}
+
+	.kw_search {
+		max-width: 222px
+	}
+
+	.logothuonghieu li > a {
+		height: 90px
+	}
+
+	.kw_tinmoi li p {
+		overflow: hidden
+	}
+
+	.wrap-logothuonghieu {
+		height: 111px !important
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.kw_dichvu {
+		height: auto;
+		margin: 0;
+		width: auto
+	}
+
+	.kw_quota .text {
+		font-size: 14px;
+		line-height: 24px
+	}
+
+	.kw_dichvu li > a {
+		width: 98% !important;
+	}
+
+	.textbottom li {
+		width: 100%
+	}
+
+	#boxsp li.product {
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 15px
+	}
+
+	.kw_spnoibat li, .kw_tinmoi li {
+		width: 100%;
+		margin: 0 !important;
+		margin-bottom: 10px !important
+	}
+
+	#boxsp li.news {
+		width: 98%;
+		margin-bottom: 10px
+	}
+
+	.settinmoi, .hinhtinmoi, .settinmoi {
+		height: auto !important
+	}
+
+	.kw_tinmoi li img {
+		min-height: inherit;
+		width: 100%;
+		height: auto
+	}
+}
+
+@media screen and (max-width: 415px) {
+}
+
+@media screen and (max-width: 320px) {
+	#boxsp li.product {
+		width: 99%
+	}
+
+	.kw_header a.logo img {
+		max-width: 97%
+	}
+}
+
+
