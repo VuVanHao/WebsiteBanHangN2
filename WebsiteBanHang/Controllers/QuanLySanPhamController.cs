@@ -293,9 +293,19 @@ namespace WebsiteBanHang.Controllers
             {
                 return HttpNotFound();
             }
-            db.SanPhams.Remove(sp);
-            db.SaveChanges();
-
+            var count = 0;
+            var countPN = 0;
+            count = db.ChiTietDonDatHangs.Count(x => x.MaSP == id);
+            countPN = db.ChiTietPhieuNhaps.Count(x => x.MaSP == id);
+            if(count == 0 && countPN == 0)
+            {
+                db.SanPhams.Remove(sp);
+                db.SaveChanges();
+            }  
+            else
+            {
+                Response.Write("<script>alert('Hello');</script>");
+            }    
             return RedirectToAction("Index");
         }
 

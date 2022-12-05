@@ -1,6 +1,7 @@
 ﻿@model WebsiteBanHang.Models.SanPham
 
 @{
+    var flag = ViewBag.flag;
     ViewBag.Title = "Quản lý sản phẩm";
     Layout = "~/Views/Layout/AdminLayout.cshtml";
 }
@@ -92,7 +93,7 @@
                 {
                     @Html.AntiForgeryToken()
                     <input type="submit" value="Xóa" class="btn btn-sm btn-primary font-weight-bold w-25" />
-                    @Html.ActionLink("Trở về", "Index", null, htmlAttributes: new { @class = "btn btn-sm btn-secondary font-weight-bold w-25" })
+                    @Html.ActionLink("Trở về", "Index", null, htmlAttributes: new { @class = "btn btn-sm btn-secondary font-weight-bold w-25" });
                 }
             </div>
         </div>
