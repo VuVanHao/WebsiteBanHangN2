@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using WebsiteBanHang.Models;
 
 namespace WebsiteBanHang.Controllers
@@ -302,10 +303,7 @@ namespace WebsiteBanHang.Controllers
                 db.SanPhams.Remove(sp);
                 db.SaveChanges();
             }  
-            else
-            {
-                Response.Write("<script>alert('Hello');</script>");
-            }    
+              
             return RedirectToAction("Index");
         }
 
