@@ -9,9 +9,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <style>
 
-        .footer-classs{
-            margin-left:400px;
+        .footer-classs {
+            margin-left: 0px;
+            text-align: center;
+            padding-bottom: 20px;
+            background-color: rgb(0,128,128)
         }
+            .footer-classs > p {
+                background-color: rgb(0,128,128)
+            }
         * {
             background-color: #ffffff;
         }
@@ -54,9 +60,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         @Html.Partial("~/Views/Layout//HeaderTopPartial.cshtml")
         <div class="container">
             <div class="head-top">
-                <div class="logo">
-                    <a href="index.html"><img src="" alt=""></a>
-                </div>
                 @Html.Action("MenuPartial", "Home")
 
                 <div class="clearfix"> </div>
@@ -123,7 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a href="#">Loa</a></li>
                             <li><a href="#">pana</a></li>
                             <li><a href="#">Xiaomi</a></li>
-                            <li><a href="#">Samsung</a></li>
+                           
                             <li><a href="#">VGF</a></li>
                             <li><a href="#">Kangr</a></li>
                             <li><a href="#">G53</a></li>
@@ -145,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/alienware-m15-r1-1.png" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/logo-truong-cn.png" alt=""></a>
 
                         </div>
                         <div class=" fashion-grid1">
@@ -162,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/alienware-m15-r1-2.png" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/logo-truong-cn.png" alt=""></a>
 
                         </div>
                         <div class="fashion-grid1">
@@ -188,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--//content-->
-    <div class="footert">
+    <div class="footert" style="background-color:rgb(0,128,128)">
         <div class="container">
             <div class="footer-top-at">
 
@@ -232,8 +235,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"> </div>
             </div>
         </div>
-        <div class="footer-classs" style="background-color:black">
-            <p><b>Công ty cổ phần thiết bị điện tử Ezone Shop.</b></p>
+        <div class="footer-classs">
+            <p><b style="font-size: 2em;background-color: rgb(0,128,128);margin-top:10px">Công ty cổ phần thiết bị điện tử Ezone Shop.</b></p>
         </div>
     </div>
 </body>

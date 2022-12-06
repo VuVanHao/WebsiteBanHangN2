@@ -1,4 +1,4 @@
-﻿/*--A Design by W3layouts 
+/*--A Design by W3layouts 
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -105,13 +105,14 @@ a.item_add {
 
     .search input[type="text"] {
         outline: none;
-        padding: 3px 15px;
-        background: none;
-        width: 91%;
+        padding: 5px 20px;
+        background-color: orange;
+        width: 65%;
         border: none;
         font-size: 1.2em;
         color: #000;
         font-weight: 700;
+        margin-left : 20px;
     }
 
     .search input[type="submit"] {
@@ -120,11 +121,11 @@ a.item_add {
         position: absolute;
         outline: none;
         top: 0px;
-        right: 0px;
+        right: 10px;
         background: #c7c7c7;
         font-size: 1.2em;
         color: #000;
-        padding: 3px;
+        padding: 5px;
         font-weight: 700;
     }
 
@@ -144,6 +145,7 @@ a.item_add {
 }
 
     .header-left ul {
+        margin-top:5px;
         float: left;
     }
 
@@ -163,16 +165,20 @@ a.item_add {
                 }
 
 .logo {
-    float: left;
 }
 
 .head-top {
     padding: 1em 0;
+    margin-top: -2px;
 }
 /* start menu */
 .h_menu4 {
+    background-color: aliceblue;
     margin: 7px 0 0px;
-    float: right;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    /* width: 100%; */
 }
 
 .h_nav h4 {
@@ -580,7 +586,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .amet-sed h4 {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     color: #fff;
     font-family: 'Lato', sans-serif;
     margin: 0 0 1em;
@@ -616,7 +622,7 @@ ul.nav-bottom li {
 
 .footer-class p {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
     .footer-class p a {
