@@ -16,8 +16,10 @@ namespace WebsiteBanHang.Controllers
         // GET: QuanLySanPham
         public ActionResult Index()
         {
+            var sanspham = db.SanPhams.Select(s => s);
+            sanspham = sanspham.OrderBy(s => s.MaSP);
 
-            return View(db.SanPhams.Where(n=>n.DaXoa==false).OrderBy(n=>n.MaSP));
+            return View(sanspham.ToList());
         }
 
         [HttpGet]
